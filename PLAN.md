@@ -184,19 +184,22 @@ https://hotstuffdance.com/wp-json/
 - [x] Copy logo to project (`public/images/logo.png`)
 - [x] Install vee-validate v4 (`npm install vee-validate @vee-validate/nuxt`)
 - [x] Configure vee-validate in nuxt.config.ts
-- [ ] Create auth layout (`app/layouts/auth.vue`)
-- [ ] Create login page (`app/pages/login.vue`)
-  - Add logo image
-  - Add email field with vee-validate
-  - Add password field with validation (min 8 chars, 1 uppercase, 1 special char)
-  - Add "Remember me" checkbox
-  - Add "Sign In" button
-  - Add "Forgot password?" link (placeholder #)
+- [x] Create auth layout (`app/layouts/auth.vue`)
+- [x] Create login page UI (`app/pages/login.vue`)
+  - [x] Add logo image
+  - [x] Add email field (Nuxt UI UInput)
+  - [x] Add password field (Nuxt UI UInput)
+  - [x] Add "Remember me" checkbox
+  - [x] Add "Sign In" button
+  - [x] Add "Forgot password?" link (placeholder #)
+- [ ] Add vee-validate to login page
+  - Add email validation
+  - Add password validation (min 8 chars, 1 uppercase, 1 special char)
   - Connect to useUserStore().login()
   - Show loading state
   - Display error messages
-- [ ] Update app.vue with NuxtLayout + NuxtPage
-- [ ] Create index.vue redirect
+- [x] Update app.vue with NuxtLayout + NuxtPage
+- [x] Create index.vue redirect
 
 #### Phase 2.2: JWT Auth Flow
 - [ ] Create server API endpoint for login (`/server/api/auth/login.post.ts`)
