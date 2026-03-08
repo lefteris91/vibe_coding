@@ -181,9 +181,9 @@ https://hotstuffdance.com/wp-json/
 ### Phase 2: Authentication
 
 #### Phase 2.1: Login Page
-- [ ] Copy logo to project (`public/images/logo.png`)
-- [ ] Install vee-validate v4 (`npm install vee-validate @vee-validate/nuxt`)
-- [ ] Configure vee-validate in nuxt.config.ts
+- [x] Copy logo to project (`public/images/logo.png`)
+- [x] Install vee-validate v4 (`npm install vee-validate @vee-validate/nuxt`)
+- [x] Configure vee-validate in nuxt.config.ts
 - [ ] Create auth layout (`app/layouts/auth.vue`)
 - [ ] Create login page (`app/pages/login.vue`)
   - Add logo image
