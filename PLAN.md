@@ -175,8 +175,8 @@ https://hotstuffdance.com/wp-json/
 ### Phase 1: Project Setup
 - [x] Create Nuxt project
 - [x] Install dependencies (Nuxt UI, Pinia)
-- [ ] Configure Nuxt config
-- [ ] Set up Pinia stores
+- [x] Configure Nuxt config
+- [x] Set up Pinia stores
 
 ### Phase 2: Authentication
 - [ ] Build login page
