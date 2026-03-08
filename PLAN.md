@@ -179,9 +179,34 @@ https://hotstuffdance.com/wp-json/
 - [x] Set up Pinia stores
 
 ### Phase 2: Authentication
-- [ ] Build login page
-- [ ] Implement JWT auth flow
-- [ ] Create auth middleware
+
+#### Phase 2.1: Login Page
+- [ ] Copy logo to project (`public/images/logo.png`)
+- [ ] Install vee-validate v4 (`npm install vee-validate @vee-validate/nuxt`)
+- [ ] Configure vee-validate in nuxt.config.ts
+- [ ] Create auth layout (`app/layouts/auth.vue`)
+- [ ] Create login page (`app/pages/login.vue`)
+  - Add logo image
+  - Add email field with vee-validate
+  - Add password field with validation (min 8 chars, 1 uppercase, 1 special char)
+  - Add "Remember me" checkbox
+  - Add "Sign In" button
+  - Add "Forgot password?" link (placeholder #)
+  - Connect to useUserStore().login()
+  - Show loading state
+  - Display error messages
+- [ ] Update app.vue with NuxtLayout + NuxtPage
+- [ ] Create index.vue redirect
+
+#### Phase 2.2: JWT Auth Flow
+- [ ] Create server API endpoint for login (`/server/api/auth/login.post.ts`)
+- [ ] Integrate with WordPress JWT API
+- [ ] Store JWT token in HTTP-only cookie
+
+#### Phase 2.3: Auth Middleware
+- [ ] Create auth middleware (`middleware/auth.ts`)
+- [ ] Protect dashboard routes
+- [ ] Handle unauthorized access
 
 ### Phase 3: Core Features
 - [ ] Video library page
