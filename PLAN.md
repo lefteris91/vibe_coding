@@ -180,7 +180,7 @@ https://hotstuffdance.com/wp-json/
 
 ### Phase 2: Authentication
 
-#### Phase 2.1: Login Page
+#### Phase 2.1: Login UI
 - [x] Copy logo to project (`public/images/logo.png`)
 - [x] Install vee-validate v4 (`npm install vee-validate @vee-validate/nuxt`)
 - [x] Configure vee-validate in nuxt.config.ts
@@ -192,21 +192,44 @@ https://hotstuffdance.com/wp-json/
   - [x] Add "Remember me" checkbox
   - [x] Add "Sign In" button
   - [x] Add "Forgot password?" link (placeholder #)
+- [x] Update app.vue with NuxtLayout + NuxtPage
+- [ ] Add back button (goes to hotstuffdance.com)
+
+#### Phase 2.2: Register UI
+- [ ] Create register page (`app/pages/register.vue`)
+  - Add back button (goes to login)
+  - Add username field
+  - Add first name field
+  - Add last name field
+  - Add email field
+  - Add password field
+  - Add confirm password field
+  - Add "Sign Up" button
+  - Add link to login
+
+#### Phase 2.3: Add vee-validate to forms
 - [ ] Add vee-validate to login page
   - Add email validation
   - Add password validation (min 8 chars, 1 uppercase, 1 special char)
   - Connect to useUserStore().login()
   - Show loading state
   - Display error messages
-- [x] Update app.vue with NuxtLayout + NuxtPage
+- [ ] Add vee-validate to register page
+  - Add email validation
+  - Add password validation (min 8 chars, 1 uppercase, 1 special char)
+  - Add confirm password validation (must match password)
+  - Connect to useUserStore().register()
+  - Show loading state
+  - Display error messages
 
-#### Phase 2.2: JWT Auth Flow
-- [ ] Create server API endpoint for login (`/server/api/auth/login.post.ts`)
+#### Phase 2.4: JWT Auth Flow
+- [ ] Create server API endpoint for login
+- [ ] Create server API endpoint for register
 - [ ] Integrate with WordPress JWT API
 - [ ] Store JWT token in HTTP-only cookie
 
-#### Phase 2.3: Auth Middleware
-- [ ] Create auth middleware (`middleware/auth.ts`)
+#### Phase 2.5: Auth Middleware
+- [ ] Create auth middleware
 - [ ] Protect dashboard routes
 - [ ] Handle unauthorized access
 
