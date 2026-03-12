@@ -185,7 +185,7 @@ https://hotstuffdance.com/wp-json/
 - [x] Install vee-validate v4 (`npm install vee-validate @vee-validate/nuxt`)
 - [x] Configure vee-validate in nuxt.config.ts
 - [x] Create auth layout (`app/layouts/auth.vue`)
-- [x] Create login page UI (`app/pages/login.vue`)
+- [x] Create login page UI (`app/pages/index.vue`)
   - [x] Add logo image
   - [x] Add email field (Nuxt UI UInput)
   - [x] Add password field (Nuxt UI UInput)
@@ -199,7 +199,6 @@ https://hotstuffdance.com/wp-json/
   - Show loading state
   - Display error messages
 - [x] Update app.vue with NuxtLayout + NuxtPage
-- [x] Create index.vue redirect
 
 #### Phase 2.2: JWT Auth Flow
 - [ ] Create server API endpoint for login (`/server/api/auth/login.post.ts`)
