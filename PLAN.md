@@ -193,7 +193,7 @@ https://hotstuffdance.com/wp-json/
   - [x] Add "Sign In" button
   - [x] Add "Forgot password?" link (placeholder #)
 - [x] Update app.vue with NuxtLayout + NuxtPage
-- [ ] Add back button (goes to hotstuffdance.com)
+- [x] Add back button (goes to hotstuffdance.com)
 
 #### Phase 2.2: Register UI
 - [ ] Create register page (`app/pages/register.vue`)

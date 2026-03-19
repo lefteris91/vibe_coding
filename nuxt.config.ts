@@ -18,11 +18,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'Hot Stuff Dance Dashboard',
+      htmlAttrs: {
+        lang: 'en'
+      },
       link: [
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' }
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap' },
+        { rel: 'preload', href: '/images/logo.png', as: 'image' }
       ],
       meta: [
-        { name: 'description', content: 'User dashboard for Hot Stuff Dance' }
+        { name: 'description', content: 'User dashboard for Hot Stuff Dance' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ]
     }
   },
@@ -32,5 +37,10 @@ export default defineNuxtConfig({
     public: {
       wpApiUrl: process.env.WP_API_URL || 'https://hotstuffdance.com/wp-json'
     }
+  },
+
+  nitro: {
+    compressPublicAssets: true,
+    minify: true
   }
 })

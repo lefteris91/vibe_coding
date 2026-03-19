@@ -1,5 +1,19 @@
 <template>
   <div class="w-full max-w-lg">
+    <div class="fixed top-6 left-6 z-50">
+      <UButton
+        variant="ghost"
+        color="white"
+        size="md"
+        class="text-white hover:text-pink-400"
+        href="https://hotstuffdance.com"
+      >
+        <template #leading>
+          <UIcon name="i-heroicons-chevron-left-20-solid" class="w-5 h-5" />
+        </template>
+        Back
+      </UButton>
+    </div>
     <UCard class="shadow-xl bg-black/80 backdrop-blur-sm border border-pink-500/30">
       <template #header>
         <div class="flex flex-col items-center gap-4 pt-4">
@@ -7,6 +21,10 @@
             src="/images/logo.png" 
             alt="Hot Stuff Dance" 
             class="h-20 w-auto object-contain"
+            width="320"
+            height="80"
+            fetchpriority="high"
+            loading="eager"
           />
           <h1 class="text-2xl font-bold text-white">
             Welcome Back
